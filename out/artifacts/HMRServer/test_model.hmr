@@ -1,0 +1,247 @@
+xtype [name: float,
+    domain: [-10000 to 10000],
+    scale: 0,
+    base: numeric
+    ].
+xtype [name: clustertype,
+    domain: [0 to 1000],
+    scale: 0,
+    base: numeric
+    ].
+
+xattr [name: f0,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f1,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f2,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f3,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f4,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f5,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f6,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f7,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f8,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f9,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f10,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f11,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f12,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f13,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f14,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f15,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f16,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f17,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f18,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f19,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f20,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f21,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f22,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f23,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f24,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f25,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f26,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f27,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f28,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f29,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: f30,
+    type: float,
+    class: simple,
+    comm: out
+    ].
+
+xattr [name: cluster,
+    type: clustertype,
+    class: simple,
+    comm: out
+    ].
+xschm anchor: [f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20,f21,f22,f23,f24,f25,f26,f27,f28,f29,f30] ==> [cluster].
+xrule anchor/0: [f8 lte 0.24,f28 lte 0.25] ==>  [cluster set 0]. #0.48656242832020796
+xrule anchor/1: [f8 lte 0.96,f0 gt -1.30] ==>  [cluster set 0]. #0.4789954235630511
+xrule anchor/2: [f8 lte 0.24,f0 gt -1.30] ==>  [cluster set 0]. #0.4506846203093699
+xrule anchor/3: [f8 lte 0.24,f27 lte -0.64] ==>  [cluster set 0]. #0.25609756097560976
+xrule anchor/4: [f8 lte 0.24,f28 lte -0.58] ==>  [cluster set 0]. #0.25609756097560976
+xrule anchor/5: [f8 lte 0.24,f7 lte -0.65] ==>  [cluster set 0]. #0.25609756097560976
+xrule anchor/6: [f8 lte -0.59,f28 lte 0.25] ==>  [cluster set 0]. #0.25609756097560976
+xrule anchor/7: [f8 lte 0.24,f6 lte -0.56] ==>  [cluster set 0]. #0.25588654952740136
+xrule anchor/8: [f8 lte 0.24,f17 lte -0.51] ==>  [cluster set 0]. #0.2557421660811113
+xrule anchor/9: [f8 lte -0.59,f0 gt -1.30] ==>  [cluster set 0]. #0.24390243902439024
+xrule anchor/10: [f8 lte 0.24,f21 lte -0.51] ==>  [cluster set 0]. #0.2435719479146011
+xrule anchor/11: [f8 lte -0.59,f7 lte -0.65] ==>  [cluster set 0]. #0.23170731707317074
+xrule anchor/12: [f8 lte -0.59,f28 lte -0.58] ==>  [cluster set 0]. #0.21951219512195122
+xrule anchor/13: [f8 lte -0.59,f17 lte -0.51] ==>  [cluster set 0]. #0.18292682926829268
+xrule anchor/14: [f8 lte -0.59,f23 lte -0.56] ==>  [cluster set 0]. #0.15853658536585366
+xrule anchor/15: [f8 lte -0.59,f21 lte -0.51] ==>  [cluster set 0]. #0.15853658536585366
+xrule anchor/16: [f14 gt -0.46,f8 gt 0.24] ==>  [cluster set 1]. #0.46702571086624567
+xrule anchor/17: [f11 gt -0.58,f8 gt 0.24] ==>  [cluster set 1]. #0.45160561258122234
+xrule anchor/18: [f8 gt 0.24,f0 lte -1.30] ==>  [cluster set 1]. #0.44472525973419874
+xrule anchor/19: [f24 gt -0.01,f8 gt 0.96] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/20: [f28 gt 0.25,f7 gt 0.73] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/21: [f28 gt 0.25,f8 gt 0.96] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/22: [f8 gt 0.24,f7 gt 0.73] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/23: [f1 gt 0.15,f23 gt 1.24] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/24: [f8 gt 0.24,f27 gt 0.79] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/25: [f24 gt -0.51,f28 gt 1.23] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/26: [f11 gt -0.02,f21 gt 1.23] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/27: [f8 gt 0.24,f28 gt 1.23] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/28: [f0 lte -1.30,f4 gt 1.09] ==>  [cluster set 1]. #0.25609756097560976
+xrule anchor/29: [f8 gt 0.24,f4 gt 1.09] ==>  [cluster set 1]. #0.24390243902439024
+xrule anchor/30: [f24 gt 1.07,f1 gt 1.17] ==>  [cluster set 1]. #0.24390243902439024
+xrule anchor/31: [f8 gt 0.24,f13 gt 0.64] ==>  [cluster set 1]. #0.24390243902439024
+xrule anchor/32: [f24 gt -0.01,f13 gt 0.64] ==>  [cluster set 1]. #0.23170731707317074
+xrule anchor/33: [f11 gt -0.02,f7 gt 0.73] ==>  [cluster set 1]. #0.23170731707317074
+xrule anchor/34: [f7 gt 0.06,f13 gt 0.64] ==>  [cluster set 1]. #0.23170731707317074
+xrule anchor/35: [f16 gt -0.63,f14 gt 0.59] ==>  [cluster set 1]. #0.23170731707317074
+xrule anchor/36: [f12 lte 0.37,f28 gt 1.23] ==>  [cluster set 1]. #0.21951219512195122
+xrule anchor/37: [f16 gt -0.18,f13 gt 0.64] ==>  [cluster set 1]. #0.2073170731707317
+xrule anchor/38: [f8 gt 0.96,f28 gt 1.23] ==>  [cluster set 1]. #0.18292682926829268
+xrule anchor/39: [f8 gt 0.96,f27 gt 0.79] ==>  [cluster set 1]. #0.18292682926829268
+xrule anchor/40: [f8 gt 0.96,f3 gt 1.18] ==>  [cluster set 1]. #0.17073170731707318
+xrule anchor/41: [f8 gt 0.96,f21 gt 1.23] ==>  [cluster set 1]. #0.17073170731707318
+xrule anchor/42: [f8 gt 0.96,f1 gt 1.17] ==>  [cluster set 1]. #0.15853658536585366
+xrule anchor/43: [f20 gt 0.23,f28 gt 1.23] ==>  [cluster set 1]. #0.0975609756097561
